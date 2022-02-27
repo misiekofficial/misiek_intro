@@ -1,0 +1,189 @@
+<html>
+<head>
+    <!-- required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- styles -->
+    <link href="https://cdn.rsm.gg/fontawesome-pro-5.14.0-web/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- cursor and link control -->
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div id="app" class="root" style="display: none;">
+        <div id="step1" class="welcome-message">
+            <div class="margin-box">
+                <h1>
+                    <span>
+                        Witamy na&nbsp;<strong>Wstępie</strong><sup></sup>
+                        <span class="new-box">NEW</span>
+                    </span>
+                </h1>
+
+                <p>
+                Dziękujemy że wybrałeś nasz serwer, na wstępie chcielibyśmy cię oprowadzić po naszym serwerze
+                </p>
+
+                <p>
+                Serwer jest w wersji <strong class="version">BETA</strong> wszelkie błędy prosimy zgłaszać lub informować na kanale <strong class="kanal">#błędy</strong>
+                </p>
+
+                <div class="controls">
+                    <div>
+                        <button class="button-skip" onclick="Skip()">
+                            Pomiń
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button-next" onclick="Forward()">
+                            Następne
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Klawiszologia SOON-->
+        
+        <div id="step2" class="welcome-message" style="display: none;">
+            <div class="margin-box">
+                <h1>
+                    <span>
+                        Klawiszologia
+                    </span>
+                </h1>
+
+                <div class="klawiszologia-panel" style="color: white;">
+                    <div class="margin-box">
+                        <br />
+                        Jeżeli zapomniałeś jak użyć danej rzeczy, poniżej znajduje się Klawiszologia Serwera<sup style="color: rgb(211, 2, 89);">+</sup>
+
+                        <br />
+                        <br />
+
+                        <div class="margin-klawiszologia">
+                            <br />
+                            <p>
+                                <strong class="keyword">F1</strong>- <span>Otwórz Telefon</span>
+                            </p>
+
+                            <p>
+                                <strong class="keyword">F2</strong>- <span>Ekwipunek</span>
+                            </p>
+                            <br />
+                        </div>
+
+                        <br />
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div>
+                        <button class="button-back" onclick="Backward()">
+                            Cofnij
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button-next" onclick="Forward()">
+                            Następne
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--HUD Select-->
+        <div id="step3" class="welcome-message" style="display: none;">
+            <div class="margin-box">
+                <h1>
+                    <span>
+                        HUD
+                    </span>
+                </h1>
+
+                <div class="margin-box">
+                    Jeżeli chcesz się dowiedzieć jaki masz poziom napojenia lub apetytu po prawej stronie znajduje się HUD, poniżej znajdują się informacje
+                    podane na HUD'zie<sup style="color: rgb(211, 2, 89);">+</sup>
+
+                    <br />
+                    <br />
+
+                    <div class="margin-hud" style="color: white;">
+                        <br />
+                        <p>
+                            <i class="fad fa-hand-holding-water" style="color: rgb(8, 193, 226)"></i>- <span>Poziom Nawodnienia</span>
+                        </p>
+
+                        <p>
+                            <i class="fad fa-bread-slice" style="color: rgb(226, 106, 8)"></i>- <span>Poziom Głodu</span>
+                        </p>
+
+                        <p>
+                            <i class="fad fa-brain" style="color: rgb(84, 8, 226)"></i>- <span>Poziom Psychiki</span>
+                        </p>
+
+                        <p>
+                            <i class="fad fa-microphone-alt" style="color: rgb(219, 8, 226)"></i>- <span>Poziom Mówienia</span>
+                        </p>
+                        <br />
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div>
+                        <button class="button-back" onclick="Backward()">
+                            Cofnij
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button-next" onclick="Forward()">
+                            Następne
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--At the END-->
+        <div id="step4" class="welcome-message" style="display: none;">
+            <div class="margin-box">
+                <h1>
+                    <span>
+                        Na Zakończenie
+                    </span>
+                </h1>
+
+                <div class="margin-box">
+                    <p>
+                        Dziękujemy że doszedłeś/aś do końca tutorialu, mamy nadzieję że odnajdziecie się na serwerze i będzie usatysfakcjonowani serwerem
+                    </p>
+
+                    <i class="fad fa-heart" style="color: red; margin-left: 45%; font-size: 55px;"></i>
+                </div>
+
+                <div class="controls">
+                    <div>
+                        <button class="button-back" onclick="Backward()">
+                            Cofnij
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button-next" onclick="Skip()">
+                            Zakończ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

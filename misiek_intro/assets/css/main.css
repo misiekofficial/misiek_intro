@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:wght@300;400&display=swap');
+
+body {
+    font-family: 'Rubik';
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.root {
+    position: fixed;
+  
+    top: 25%;
+    left: 33%;
+    right: 0;
+    bottom: 0;
+  
+    z-index: 9999;
+}
+
+.welcome-message {
+    display: fixed;
+    position: fixed;
+
+    min-width: 200px;
+    max-width: 670px;
+
+    flex-direction: column;
+
+    gap: 4px*4;
+
+    padding: 4px*4 4px*4 4px*2 4px*4;
+    background-color: rgb(255, 255, 240);
+
+    box-shadow: 0 0 0 150vw rgba(22, 25, 35, 0.931);
+
+    border-radius: 4px;
+
+    animation: appearance .3s ease-in-out forwards;
+}
+
+.klawiszologia-panel {
+    background-color: rgba(22, 25, 35, .9);
+    color: white;
+
+    border-radius: 4px;
+}
+
+.keyword {
+    margin: 12px 12px 12px 12px;
+}
+
+.margin-box {
+    margin: 8px 8px 8px 8px;
+}
+
+.margin-klawiszologia {
+    background-color: rgba(18, 19, 26, 0.945);
+    border: 3px solid rgb(211, 2, 89);
+
+    border-radius: 4px;
+}
+
+.margin-hud {
+    background-color: rgba(0, 0, 0, 0.945);
+    border: 3px solid rgba(5, 244, 167, 1);
+
+    border-radius: 6px;
+}
+
+i {
+    margin: 12px 12px 12px 12px;
+}
+
+.margin-klawiszologia > p > span:hover {
+    background-color: rgb(211, 2, 89);
+}
+
+@keyframes appearance {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 4px*4;
+
+    border-bottom: solid 1px rgba(22, 25, 35, .1);
+
+    letter-spacing: 0;
+}
+
+.version {
+    background-color: rgb(14, 241, 230);
+    color: white;
+    border-radius: 5px;
+}
+
+.kanal {
+    background-color: rgb(97, 97, 97);
+    color: white;
+    margin-bottom: 8px;
+}
+
+h1 > span {
+    display: flex;
+
+    gap: 4px;
+}
+
+.new-box {
+    background-color: rgb(14, 241, 230);
+    color: white;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+p {
+    margin-bottom: 16px;
+
+    font-weight: 350;
+    line-height: 1.1;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 4px*5;
+}
+
+li {
+    margin: 4px*2 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 4px*2;
+
+    width: 100%;
+
+    user-select: none;
+}
+
+.controls > div {
+    display: flex;
+
+    gap: 4px*4;
+}
+
+.controls > div > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px;
+
+    font-family: 'Rubik';
+    font-weight: 300;
+
+    color: rgb(22, 25, 35);
+    font-weight: 400;
+    background-color: rgba(22, 25, 35, .1);
+
+    font-size: 1rem;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.controls > div > button:hover {
+    transition: none;
+}
+
+.controls > div > .button-back {
+    background-color: rgba(199, 199, 199, 0.534);
+}
+
+.controls > div > .button-back:hover {
+    background-color: rgba(22, 25, 35, .2);
+}
+
+.controls > div > .button-skip {
+    background-color: transparent;
+    margin-right: 16px;
+}
+
+.controls > div > .button-skip:hover {
+    background-color: rgba(22, 25, 35, .2);
+}
+
+.controls > div > .button-next {
+    background-color: rgba(5, 244, 167, 1);
+}
+
+.controls > div > .button-next:hover {
+    background-color: rgba(5, 244, 167, .8);
+}
